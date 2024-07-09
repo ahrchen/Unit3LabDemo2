@@ -10,7 +10,7 @@ Time spent: **3** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] Users see an app icon in the home screen and a styled launch screen.
+- [X] Users see an app icon in the home screen and a styled launch screen.
 - [ ] User can register a new account
 - [ ] User can log in with newly created account
 - [ ] App has a feed of posts when user logs in
