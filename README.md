@@ -11,11 +11,11 @@ Time spent: **3** hours spent in total
 The following **required** functionality is completed:
 
 - [X] Users see an app icon in the home screen and a styled launch screen.
-- [ ] User can register a new account
-- [ ] User can log in with newly created account
+- [X] User can register a new account
+- [X] User can log in with newly created account
 - [ ] App has a feed of posts when user logs in
 - [ ] User can upload a new post which takes in a picture from photo library and an optional caption	
-- [ ] User is able to logout	
+- [X] User is able to logout	
  
 The following **optional** features are implemented:
 
