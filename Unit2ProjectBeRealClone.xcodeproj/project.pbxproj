@@ -15,6 +15,11 @@
 		EE1D5C212C3DA3A500A6789E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EE1D5C202C3DA3A500A6789E /* Base */; };
 		EE1D5C342C3DDF4D00A6789E /* App Icon Front.png in Resources */ = {isa = PBXBuildFile; fileRef = EE1D5C332C3DDF4D00A6789E /* App Icon Front.png */; };
 		EE1D5C362C3DDF5400A6789E /* AppSplashBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE1D5C352C3DDF5400A6789E /* AppSplashBackground.jpg */; };
+		EE1D5C392C3DE34400A6789E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C382C3DE34400A6789E /* User.swift */; };
+		EE1D5C3C2C3DE3A900A6789E /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE1D5C3B2C3DE3A900A6789E /* ParseSwift */; };
+		EE1D5C3F2C3DE67100A6789E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C3E2C3DE67100A6789E /* LoginViewController.swift */; };
+		EE1D5C422C3E089B00A6789E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C412C3E089B00A6789E /* FeedViewController.swift */; };
+		EE1D5C442C3FB2FE00A6789E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C432C3FB2FE00A6789E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,10 @@
 		EE1D5C222C3DA3A500A6789E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE1D5C332C3DDF4D00A6789E /* App Icon Front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon Front.png"; sourceTree = "<group>"; };
 		EE1D5C352C3DDF5400A6789E /* AppSplashBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AppSplashBackground.jpg; sourceTree = "<group>"; };
+		EE1D5C382C3DE34400A6789E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE1D5C3E2C3DE67100A6789E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE1D5C412C3E089B00A6789E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EE1D5C432C3FB2FE00A6789E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1D5C3C2C3DE3A900A6789E /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +74,11 @@
 				EE1D5C142C3DA3A300A6789E /* AppDelegate.swift */,
 				EE1D5C162C3DA3A300A6789E /* SceneDelegate.swift */,
 				EE1D5C182C3DA3A300A6789E /* ViewController.swift */,
-				EE1D5C1A2C3DA3A300A6789E /* Main.storyboard */,
+				EE1D5C3D2C3DE60A00A6789E /* Login */,
+				EE1D5C372C3DE33100A6789E /* Model */,
+				EE1D5C402C3E086F00A6789E /* Feed */,
 				EE1D5C1D2C3DA3A500A6789E /* Assets.xcassets */,
+				EE1D5C1A2C3DA3A300A6789E /* Main.storyboard */,
 				EE1D5C1F2C3DA3A500A6789E /* LaunchScreen.storyboard */,
 				EE1D5C222C3DA3A500A6789E /* Info.plist */,
 			);
@@ -79,6 +92,31 @@
 				EE1D5C332C3DDF4D00A6789E /* App Icon Front.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		EE1D5C372C3DE33100A6789E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D5C382C3DE34400A6789E /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE1D5C3D2C3DE60A00A6789E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D5C3E2C3DE67100A6789E /* LoginViewController.swift */,
+				EE1D5C432C3FB2FE00A6789E /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE1D5C402C3E086F00A6789E /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D5C412C3E089B00A6789E /* FeedViewController.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +135,9 @@
 			dependencies = (
 			);
 			name = Unit2ProjectBeRealClone;
+			packageProductDependencies = (
+				EE1D5C3B2C3DE3A900A6789E /* ParseSwift */,
+			);
 			productName = Unit2ProjectBeRealClone;
 			productReference = EE1D5C112C3DA3A300A6789E /* Unit2ProjectBeRealClone.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +166,9 @@
 				Base,
 			);
 			mainGroup = EE1D5C082C3DA3A300A6789E;
+			packageReferences = (
+				EE1D5C3A2C3DE3A900A6789E /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = EE1D5C122C3DA3A300A6789E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1D5C392C3DE34400A6789E /* User.swift in Sources */,
+				EE1D5C442C3FB2FE00A6789E /* SignUpViewController.swift in Sources */,
 				EE1D5C192C3DA3A300A6789E /* ViewController.swift in Sources */,
 				EE1D5C152C3DA3A300A6789E /* AppDelegate.swift in Sources */,
+				EE1D5C3F2C3DE67100A6789E /* LoginViewController.swift in Sources */,
+				EE1D5C422C3E089B00A6789E /* FeedViewController.swift in Sources */,
 				EE1D5C172C3DA3A300A6789E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE1D5C3A2C3DE3A900A6789E /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE1D5C3B2C3DE3A900A6789E /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE1D5C3A2C3DE3A900A6789E /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE1D5C092C3DA3A300A6789E /* Project object */;
 }
