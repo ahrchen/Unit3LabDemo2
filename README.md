@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [X] User can register a new account
 - [X] User can log in with newly created account
 - [X] App has a feed of posts when user logs in
-- [ ] User can upload a new post which takes in a picture from photo library and an optional caption	
+- [X] User can upload a new post which takes in a picture from photo library and an optional caption	
 - [X] User is able to logout	
  
 The following **optional** features are implemented:
@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 - [ ] Users can pull to refresh their feed and see a loading indicator
 - [ ] Users can infinite-scroll in their feed to see past the 10 most recent photos
 - [ ] Users can see location and time of photo upload in the feed	
-- [ ] User stays logged in when app is closed and open again	
+- [X] User stays logged in when app is closed and open again	
 
 
 The following **additional** features are implemented:
