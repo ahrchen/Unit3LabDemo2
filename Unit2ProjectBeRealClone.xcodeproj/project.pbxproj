@@ -23,6 +23,7 @@
 		EE1D5C542C435E5C00A6789E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C532C435E5C00A6789E /* PostCell.swift */; };
 		EE1D5C562C4360CF00A6789E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C552C4360CF00A6789E /* Post.swift */; };
 		EE1D5C612C437C8000A6789E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = EE1D5C602C437C8000A6789E /* AlamofireImage */; };
+		EE1D5C642C44683E00A6789E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C632C44683E00A6789E /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EE1D5C432C3FB2FE00A6789E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EE1D5C532C435E5C00A6789E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EE1D5C552C4360CF00A6789E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EE1D5C632C44683E00A6789E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				EE1D5C142C3DA3A300A6789E /* AppDelegate.swift */,
 				EE1D5C162C3DA3A300A6789E /* SceneDelegate.swift */,
 				EE1D5C182C3DA3A300A6789E /* ViewController.swift */,
+				EE1D5C622C44681A00A6789E /* Post */,
 				EE1D5C3D2C3DE60A00A6789E /* Login */,
 				EE1D5C372C3DE33100A6789E /* Model */,
 				EE1D5C402C3E086F00A6789E /* Feed */,
@@ -125,6 +128,14 @@
 				EE1D5C532C435E5C00A6789E /* PostCell.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		EE1D5C622C44681A00A6789E /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D5C632C44683E00A6789E /* PostViewController.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				EE1D5C442C3FB2FE00A6789E /* SignUpViewController.swift in Sources */,
 				EE1D5C192C3DA3A300A6789E /* ViewController.swift in Sources */,
 				EE1D5C152C3DA3A300A6789E /* AppDelegate.swift in Sources */,
+				EE1D5C642C44683E00A6789E /* PostViewController.swift in Sources */,
 				EE1D5C3F2C3DE67100A6789E /* LoginViewController.swift in Sources */,
 				EE1D5C422C3E089B00A6789E /* FeedViewController.swift in Sources */,
 				EE1D5C562C4360CF00A6789E /* Post.swift in Sources */,

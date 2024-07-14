@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23068.1"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -224,6 +225,12 @@
                                 <action selector="onLogOutTapped:" destination="SmM-0d-XN1" id="TKY-MA-f5b"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="plus.app" catalog="system" id="5OE-rh-t7X">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <segue destination="2WB-aq-Rov" kind="show" id="QLp-Kr-Tqc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Jur-ix-QlS" id="rCV-ew-WvF"/>
@@ -232,6 +239,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ln-F5-Znt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1661" y="806"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="wfc-tS-aHL">
+            <objects>
+                <viewController id="2WB-aq-Rov" customClass="PostViewController" customModule="Unit2ProjectBeRealClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEI-QN-aHa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WbT-XR-c5G">
+                                <rect key="frame" x="0.0" y="103" width="393" height="427"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apJ-X4-Nbg">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G65-2w-Ib8">
+                                        <rect key="frame" x="0.0" y="35.666666666666679" width="393" height="389.99999999999994"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.23850273840206182" green="0.23850273840206182" blue="0.23850273840206182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G65-2w-Ib8" secondAttribute="height" multiplier="1:1" id="kG4-9G-SHh"/>
+                                        </constraints>
+                                        <imageReference key="image" image="photo.artframe" catalog="system" symbolScale="default"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Med-ZY-bav"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WbT-XR-c5G" firstAttribute="leading" secondItem="Med-ZY-bav" secondAttribute="leading" id="LkC-4c-np4"/>
+                            <constraint firstItem="Med-ZY-bav" firstAttribute="trailing" secondItem="WbT-XR-c5G" secondAttribute="trailing" id="cce-k5-pNm"/>
+                            <constraint firstItem="WbT-XR-c5G" firstAttribute="top" secondItem="Med-ZY-bav" secondAttribute="top" id="gdF-JS-gyD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aGt-B2-6Ry">
+                        <rightBarButtonItems>
+                            <barButtonItem title="share" id="XWj-eB-Eb2">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="onShareTapped:" destination="2WB-aq-Rov" id="Vvk-NX-244"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="photo" catalog="system" id="Yl6-rP-DrD">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="onPickedImageTapped:" destination="2WB-aq-Rov" id="0pq-He-iG7"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="captionTextField" destination="apJ-X4-Nbg" id="pPD-1K-UOJ"/>
+                        <outlet property="previewImageView" destination="G65-2w-Ib8" id="iOc-u8-vWS"/>
+                        <outlet property="shareButton" destination="XWj-eB-Eb2" id="gkw-69-gFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ee9-n7-vUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kAK-JC-F76">
+                    <connections>
+                        <action selector="onViewTapped:" destination="2WB-aq-Rov" id="Arg-Ke-OuC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2485" y="806"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="xHx-OE-IZo">
@@ -310,6 +387,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
