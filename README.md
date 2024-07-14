@@ -13,7 +13,7 @@ The following **required** functionality is completed:
 - [X] Users see an app icon in the home screen and a styled launch screen.
 - [X] User can register a new account
 - [X] User can log in with newly created account
-- [ ] App has a feed of posts when user logs in
+- [X] App has a feed of posts when user logs in
 - [ ] User can upload a new post which takes in a picture from photo library and an optional caption	
 - [X] User is able to logout	
  
