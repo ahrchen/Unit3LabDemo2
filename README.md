@@ -1,8 +1,8 @@
-# Project 2 - *Be Real Clone*
+# Project 3 - *Be Real Clone*
 
 Submitted by: **Raymond Chen**
 
-**Be Real Clone** is an app that clones some of the main functionalities of the trending app called BeReal. In this app, users post a photo of what they’re currently doing upon receiving a random notification during the day. Only after posting a photo can the user see their friends’ photos.
+This is the second part of the BeReal clone project where you will add persistence and some cool BeReal functionality to the app.
 
 Time spent: **3** hours spent in total
 
@@ -10,20 +10,15 @@ Time spent: **3** hours spent in total
 
 The following **required** functionality is completed:
 
-- [X] Users see an app icon in the home screen and a styled launch screen.
-- [X] User can register a new account
-- [X] User can log in with newly created account
-- [X] App has a feed of posts when user logs in
-- [X] User can upload a new post which takes in a picture from photo library and an optional caption	
-- [X] User is able to logout	
+- [ ] User can launch camera to take photo instead of photo library
+- [ ] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
+- [ ] Users can intereact with posts via comments, comments will have user data such as username and name
+- [ ] Posts have a time and location attached to them
+- [ ] Users are not able to see other photos until they post their own (within 24 hours)	
  
 The following **optional** features are implemented:
 
-- [ ] Users can pull to refresh their feed and see a loading indicator
-- [ ] Users can infinite-scroll in their feed to see past the 10 most recent photos
-- [ ] Users can see location and time of photo upload in the feed	
-- [X] User stays logged in when app is closed and open again	
-
+- [ ] User receive notifcation when it is time to post
 
 The following **additional** features are implemented:
 
@@ -33,7 +28,7 @@ The following **additional** features are implemented:
 
 Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
 
-[Guide](https://www.youtube.com/watch?v=GA92eKlYio4).
+[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
 
 ## Notes
 
