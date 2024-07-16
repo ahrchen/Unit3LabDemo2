@@ -260,7 +260,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G65-2w-Ib8">
-                                        <rect key="frame" x="0.0" y="35.666666666666679" width="393" height="389.99999999999994"/>
+                                        <rect key="frame" x="0.0" y="35.666666666666657" width="393" height="390"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.23850273840206182" green="0.23850273840206182" blue="0.23850273840206182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -291,6 +291,12 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="onPickedImageTapped:" destination="2WB-aq-Rov" id="0pq-He-iG7"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="camera" catalog="system" style="plain" id="oPX-0B-ybT">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="onTakePhotoTapped:" destination="2WB-aq-Rov" id="BHe-wB-TDg"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -387,6 +393,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
