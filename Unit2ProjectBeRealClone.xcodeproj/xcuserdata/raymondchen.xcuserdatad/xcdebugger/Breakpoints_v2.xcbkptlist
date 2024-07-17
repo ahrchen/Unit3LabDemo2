@@ -14,8 +14,8 @@
             filePath = "Unit2ProjectBeRealClone/Feed/PostCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "prepareForReuse()"
             landmarkType = "7">
          </BreakpointContent>

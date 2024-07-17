@@ -38,6 +38,8 @@ class FeedViewController: UIViewController {
         // 1. Create a query to fetch Posts
         // 2. Any properties that are Parse objects are stored by reference in Parse DB and as such need to explicitly use `include_:)` to be included in query results.
         // 3. Sort the posts by descending order based on the created at date
+
+        
         let query = Post.query()
             .include("user")
             .order([.descending("createdAt")])

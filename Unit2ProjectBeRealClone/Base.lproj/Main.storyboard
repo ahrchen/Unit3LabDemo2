@@ -165,13 +165,35 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CPw-3G-RxO" userLabel="Post Image View">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhW-ke-TuP">
                                                             <rect key="frame" x="0.0" y="20.333333333333343" width="393" height="393"/>
-                                                            <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CPw-3G-RxO" userLabel="Post Image View">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                                                    <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                                </imageView>
+                                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-mA-hOv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aEj-A5-aVR">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    </view>
+                                                                    <blurEffect style="regular"/>
+                                                                </visualEffectView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="CPw-3G-RxO" secondAttribute="height" multiplier="1:1" id="8VN-5y-3IJ"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Saa-mA-hOv" secondAttribute="bottom" id="5VZ-bd-d3J"/>
+                                                                <constraint firstItem="Saa-mA-hOv" firstAttribute="leading" secondItem="GhW-ke-TuP" secondAttribute="leading" id="9CV-Qu-aqU"/>
+                                                                <constraint firstAttribute="bottom" secondItem="CPw-3G-RxO" secondAttribute="bottom" id="BU1-JW-CWf"/>
+                                                                <constraint firstItem="CPw-3G-RxO" firstAttribute="leading" secondItem="GhW-ke-TuP" secondAttribute="leading" id="Ftr-J0-hqB"/>
+                                                                <constraint firstAttribute="width" secondItem="GhW-ke-TuP" secondAttribute="height" id="NFo-eU-GDF"/>
+                                                                <constraint firstItem="CPw-3G-RxO" firstAttribute="top" secondItem="GhW-ke-TuP" secondAttribute="top" id="bsB-1b-XCm"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Saa-mA-hOv" secondAttribute="trailing" id="dn5-Kf-Utp"/>
+                                                                <constraint firstItem="Saa-mA-hOv" firstAttribute="top" secondItem="GhW-ke-TuP" secondAttribute="top" id="jrx-Kv-3UB"/>
+                                                                <constraint firstAttribute="trailing" secondItem="CPw-3G-RxO" secondAttribute="trailing" id="zUf-Zi-Yhb"/>
                                                             </constraints>
-                                                        </imageView>
+                                                        </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wjg-HR-nde">
                                                             <rect key="frame" x="0.0" y="413.33333333333331" width="393" height="40.666666666666686"/>
                                                             <subviews>
@@ -200,6 +222,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="blurView" destination="Saa-mA-hOv" id="q87-j1-4Fd"/>
                                             <outlet property="captionLabel" destination="EsK-p3-i4L" id="Mgj-Q9-6ts"/>
                                             <outlet property="dateLabel" destination="Hzg-Uj-cXr" id="izp-eK-Yyt"/>
                                             <outlet property="postImageView" destination="CPw-3G-RxO" id="SYh-CX-ejo"/>
