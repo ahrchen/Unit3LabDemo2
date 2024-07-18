@@ -24,6 +24,7 @@ class PostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLocationManager()
     }
     
     
@@ -177,7 +178,7 @@ class PostViewController: UIViewController {
         // The image picker (camera in this case) will return captured photos via it's delegate method to it's assigned delegate.
         // Delegate assignee must conform and implement both `UIImagePickerControllerDelegate` and `UINavigationControllerDelegate`
         imagePicker.delegate = self
-
+        
         // Present the image picker (camera)
         present(imagePicker, animated: true)
 

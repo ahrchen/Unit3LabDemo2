@@ -7,49 +7,103 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F942C17D-5D9E-4D7E-B596-696D14F01923"
-            shouldBeEnabled = "Yes"
+            uuid = "D88BA000-0D35-4496-8351-31536FC767CD"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Unit2ProjectBeRealClone/Post/PostViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "onShareTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FBF6CCF7-0AA1-41AB-BF8E-AE77FA12CE1E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Unit2ProjectBeRealClone/Post/PostViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "329"
-            endingLineNumber = "329"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "89A6ED6E-1073-4791-8714-21061A2A21F6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Unit2ProjectBeRealClone/Post/PostViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
-            landmarkType = "7">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "PostViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D88BA000-0D35-4496-8351-31536FC767CD - 50d2c41dd421"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Unit2ProjectBeRealClone.PostViewController.previewLocationLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Unit2ProjectBeRealClone.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondchen/Downloads/XCodeProjects/iOS102CodePath/Unit2ProjectBeRealClone/Unit2ProjectBeRealClone/Post/PostViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D88BA000-0D35-4496-8351-31536FC767CD - 99b60f147f3001f5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Unit2ProjectBeRealClone.PostViewController.previewLocationLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Unit2ProjectBeRealClone.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondchen/Downloads/XCodeProjects/iOS102CodePath/Unit2ProjectBeRealClone/Unit2ProjectBeRealClone/Post/PostViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D88BA000-0D35-4496-8351-31536FC767CD - 12533ccd7ce2284b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Unit2ProjectBeRealClone.PostViewController.previewLocationLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Unit2ProjectBeRealClone.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondchen/Downloads/XCodeProjects/iOS102CodePath/Unit2ProjectBeRealClone/Unit2ProjectBeRealClone/Post/PostViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18">
+               </Location>
+               <Location
+                  uuid = "D88BA000-0D35-4496-8351-31536FC767CD - de77bc8a34b3255f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Unit2ProjectBeRealClone.PostViewController.previewLocationLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Unit2ProjectBeRealClone.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D88BA000-0D35-4496-8351-31536FC767CD - 2fe2f62685b42fcd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Unit2ProjectBeRealClone.PostViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Unit2ProjectBeRealClone.PostViewController"
+                  moduleName = "Unit2ProjectBeRealClone.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondchen/Downloads/XCodeProjects/iOS102CodePath/Unit2ProjectBeRealClone/Unit2ProjectBeRealClone/Post/PostViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18">
+               </Location>
+               <Location
+                  uuid = "D88BA000-0D35-4496-8351-31536FC767CD - e73c0c014a84fd01"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Unit2ProjectBeRealClone.PostViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Unit2ProjectBeRealClone.PostViewController&gt;"
+                  moduleName = "Unit2ProjectBeRealClone.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondchen/Downloads/XCodeProjects/iOS102CodePath/Unit2ProjectBeRealClone/Unit2ProjectBeRealClone/Post/PostViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
