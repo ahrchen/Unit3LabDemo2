@@ -104,7 +104,7 @@ extension DetailedFeedViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailedPostCell", for: indexPath) as? DetailedPostCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell else {
                 return UITableViewCell()
             }
             cell.configure(with: post)

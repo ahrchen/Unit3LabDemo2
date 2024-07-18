@@ -172,25 +172,29 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
                                                                     <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                                                 </imageView>
-                                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-mA-hOv">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
-                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aEj-A5-aVR">
+                                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6g-bR-4IP">
+                                                                    <rect key="frame" x="0.0" y="-0.33333333333334281" width="393" height="393"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GyU-mM-bj5">
                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     </view>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="z6g-bR-4IP" secondAttribute="height" multiplier="1:1" id="nuF-DF-hYe"/>
+                                                                    </constraints>
                                                                     <blurEffect style="regular"/>
                                                                 </visualEffectView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="Saa-mA-hOv" secondAttribute="bottom" id="5VZ-bd-d3J"/>
-                                                                <constraint firstItem="Saa-mA-hOv" firstAttribute="leading" secondItem="GhW-ke-TuP" secondAttribute="leading" id="9CV-Qu-aqU"/>
+                                                                <constraint firstItem="z6g-bR-4IP" firstAttribute="leading" secondItem="GhW-ke-TuP" secondAttribute="leading" id="3Z7-kv-Wev"/>
                                                                 <constraint firstAttribute="bottom" secondItem="CPw-3G-RxO" secondAttribute="bottom" id="BU1-JW-CWf"/>
                                                                 <constraint firstItem="CPw-3G-RxO" firstAttribute="leading" secondItem="GhW-ke-TuP" secondAttribute="leading" id="Ftr-J0-hqB"/>
+                                                                <constraint firstAttribute="bottom" secondItem="z6g-bR-4IP" secondAttribute="bottom" constant="0.33333333333337123" id="Hbr-0t-WCI"/>
+                                                                <constraint firstAttribute="trailing" secondItem="z6g-bR-4IP" secondAttribute="trailing" id="JJQ-BY-cYt"/>
                                                                 <constraint firstAttribute="width" secondItem="GhW-ke-TuP" secondAttribute="height" id="NFo-eU-GDF"/>
+                                                                <constraint firstItem="z6g-bR-4IP" firstAttribute="width" secondItem="z6g-bR-4IP" secondAttribute="height" multiplier="1:1" id="YXz-gT-E4X"/>
                                                                 <constraint firstItem="CPw-3G-RxO" firstAttribute="top" secondItem="GhW-ke-TuP" secondAttribute="top" id="bsB-1b-XCm"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Saa-mA-hOv" secondAttribute="trailing" id="dn5-Kf-Utp"/>
-                                                                <constraint firstItem="Saa-mA-hOv" firstAttribute="top" secondItem="GhW-ke-TuP" secondAttribute="top" id="jrx-Kv-3UB"/>
+                                                                <constraint firstItem="z6g-bR-4IP" firstAttribute="top" secondItem="GhW-ke-TuP" secondAttribute="top" constant="-0.33333333333337123" id="qEB-J6-YTc"/>
                                                                 <constraint firstAttribute="trailing" secondItem="CPw-3G-RxO" secondAttribute="trailing" id="zUf-Zi-Yhb"/>
                                                             </constraints>
                                                         </view>
@@ -228,7 +232,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="blurView" destination="Saa-mA-hOv" id="q87-j1-4Fd"/>
+                                            <outlet property="blurView" destination="z6g-bR-4IP" id="azW-oD-cjB"/>
                                             <outlet property="captionLabel" destination="EsK-p3-i4L" id="Mgj-Q9-6ts"/>
                                             <outlet property="dateLabel" destination="Hzg-Uj-cXr" id="izp-eK-Yyt"/>
                                             <outlet property="locationLabel" destination="5MN-1P-y9S" id="2Cz-k5-VmY"/>
@@ -472,7 +476,7 @@
                                             <outlet property="userLabel" destination="Iw1-vP-JoQ" id="Wtm-4g-UeT"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailedPostCell" id="v0o-OP-we5" customClass="DetailedPostCell" customModule="Unit2ProjectBeRealClone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="v0o-OP-we5" customClass="PostCell" customModule="Unit2ProjectBeRealClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="465.33334350585938"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v0o-OP-we5" id="kTM-ts-P48">
@@ -503,6 +507,17 @@
                                                                         <constraint firstAttribute="width" constant="393" id="mr3-ZZ-zh8"/>
                                                                     </constraints>
                                                                 </imageView>
+                                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-mA-hOv">
+                                                                    <rect key="frame" x="0.0" y="-0.33333333333348492" width="393" height="393"/>
+                                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aEj-A5-aVR">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    </view>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="Saa-mA-hOv" secondAttribute="height" multiplier="1:1" id="kWy-Ui-938"/>
+                                                                    </constraints>
+                                                                    <blurEffect style="regular"/>
+                                                                </visualEffectView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
@@ -552,11 +567,12 @@
                                             <constraint firstAttribute="bottom" secondItem="rcV-MN-Y39" secondAttribute="bottom" constant="11.000010172526004" id="WVN-Ty-WJK"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="captionLabel" destination="6DK-Eu-uNR" id="R8L-f4-XRt"/>
-                                            <outlet property="dateLabel" destination="2Ss-HN-nMZ" id="tuI-ls-QHu"/>
-                                            <outlet property="locationLabel" destination="3dX-zS-4gs" id="OWo-6h-FuQ"/>
-                                            <outlet property="postImageView" destination="3MD-xr-rOf" id="DTT-6Z-St4"/>
-                                            <outlet property="usernameLabel" destination="jMD-D1-bQp" id="6zc-9j-E8T"/>
+                                            <outlet property="blurView" destination="Saa-mA-hOv" id="oHr-js-586"/>
+                                            <outlet property="captionLabel" destination="6DK-Eu-uNR" id="CRL-aX-O0K"/>
+                                            <outlet property="dateLabel" destination="2Ss-HN-nMZ" id="sQH-qK-Rlt"/>
+                                            <outlet property="locationLabel" destination="3dX-zS-4gs" id="2rm-nC-wVH"/>
+                                            <outlet property="postImageView" destination="3MD-xr-rOf" id="be2-k7-22Q"/>
+                                            <outlet property="usernameLabel" destination="jMD-D1-bQp" id="rRq-Zh-nvU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

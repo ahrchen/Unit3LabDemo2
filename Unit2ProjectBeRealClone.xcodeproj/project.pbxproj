@@ -27,7 +27,6 @@
 		EE1D5C682C48330800A6789E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C672C48330800A6789E /* Comment.swift */; };
 		EE1D5C6A2C4864FB00A6789E /* DetailedFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C692C4864FB00A6789E /* DetailedFeedViewController.swift */; };
 		EE1D5C6C2C48651500A6789E /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C6B2C48651500A6789E /* CommentCell.swift */; };
-		EE1D5C6E2C487D3100A6789E /* DetailedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D5C6D2C487D3100A6789E /* DetailedPostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		EE1D5C672C48330800A6789E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EE1D5C692C4864FB00A6789E /* DetailedFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedFeedViewController.swift; sourceTree = "<group>"; };
 		EE1D5C6B2C48651500A6789E /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
-		EE1D5C6D2C487D3100A6789E /* DetailedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 				EE1D5C692C4864FB00A6789E /* DetailedFeedViewController.swift */,
 				EE1D5C6B2C48651500A6789E /* CommentCell.swift */,
 				EE1D5C532C435E5C00A6789E /* PostCell.swift */,
-				EE1D5C6D2C487D3100A6789E /* DetailedPostCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 				EE1D5C562C4360CF00A6789E /* Post.swift in Sources */,
 				EE1D5C6A2C4864FB00A6789E /* DetailedFeedViewController.swift in Sources */,
 				EE1D5C172C3DA3A300A6789E /* SceneDelegate.swift in Sources */,
-				EE1D5C6E2C487D3100A6789E /* DetailedPostCell.swift in Sources */,
 				EE1D5C682C48330800A6789E /* Comment.swift in Sources */,
 				EE1D5C542C435E5C00A6789E /* PostCell.swift in Sources */,
 			);
