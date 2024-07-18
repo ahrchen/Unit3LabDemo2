@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import Alamofire
 import AlamofireImage
+import CoreLocation
 
 class DetailedPostCell: UITableViewCell {
     private var imageDataRequest: DataRequest?
@@ -17,6 +18,7 @@ class DetailedPostCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
     func configure(with post: Post) {
         // Username
@@ -47,6 +49,23 @@ class DetailedPostCell: UITableViewCell {
         // Date
         if let date = post.createdAt {
             dateLabel.text = DateFormatter.postFormatter.string(from: date)
+        }
+        
+        // Location
+        if let location = post.location?.toCLLocation {
+            let geocoder = CLGeocoder()
+             geocoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) in
+                if error == nil {
+                    let firstLocation = placemarks?[0]
+                    self.locationLabel.text = firstLocation?.name
+                }
+                else {
+                 // An error occurred during geocoding.
+                    self.locationLabel.text = "No location found"
+                }
+            })
+        } else {
+            self.locationLabel.text = "No location found"
         }
         
     }

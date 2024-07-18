@@ -120,3 +120,4 @@ extension DetailedFeedViewController: UITableViewDataSource {
 }
 
 extension DetailedFeedViewController: UITableViewDelegate {}
+

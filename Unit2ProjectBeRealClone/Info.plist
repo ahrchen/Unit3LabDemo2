@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>In order to get photo to add to your post, we need to access your photo library</string>
 	<key>NSCameraUsageDescription</key>
 	<string>In order to take a photo to add to your post, we need to access your camera.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need access to your location in order to add a location to your post.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
