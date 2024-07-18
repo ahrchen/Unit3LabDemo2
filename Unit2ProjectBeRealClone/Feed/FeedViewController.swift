@@ -24,7 +24,6 @@ class FeedViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.allowsSelection = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +41,7 @@ class FeedViewController: UIViewController {
         
         let query = Post.query()
             .include("user")
+            .include("comments")
             .order([.descending("createdAt")])
 
         // Fetch objects (posts) defined in query (async)
@@ -94,4 +94,20 @@ extension FeedViewController: UITableViewDataSource {
     }
 }
 
-extension FeedViewController: UITableViewDelegate { }
+extension FeedViewController: UITableViewDelegate { 
+    // Implement didSelectRowAt to handle cell selection
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("touch \(indexPath.row)")
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "ShowDetails", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetails" {
+            if let destinationVC = segue.destination as? DetailedFeedViewController,
+               let indexPath = sender as? IndexPath {
+                destinationVC.post = posts[indexPath.row]
+            }
+        }
+    }
+}

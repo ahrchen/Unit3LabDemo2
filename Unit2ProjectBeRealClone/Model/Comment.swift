@@ -1,14 +1,15 @@
 //
-//  Post.swift
+//  Comment.swift
 //  Unit2ProjectBeRealClone
 //
-//  Created by Raymond Chen on 7/13/24.
+//  Created by Raymond Chen on 7/17/24.
 //
 
 import Foundation
+
 import ParseSwift
 
-struct Post: ParseObject {
+struct Comment: ParseObject {
     // These are required by ParseObject
     var objectId: String?
     var createdAt: Date?
@@ -17,8 +18,7 @@ struct Post: ParseObject {
     var originalData: Data?
 
     // Your own custom properties.
-    var caption: String?
+    var username: String?
     var user: User?
-    var imageFile: ParseFile?
-    var comments: [Comment]?
+    var comment: String?
 }

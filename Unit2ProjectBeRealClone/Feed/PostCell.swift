@@ -20,6 +20,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     private var imageDataRequest: DataRequest?
     
+    
     func configure(with post: Post) {
         // Username
         if let user = post.user {

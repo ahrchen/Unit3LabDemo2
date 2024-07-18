@@ -66,7 +66,7 @@ class PostViewController: UIViewController {
         // Set properties
         post.imageFile = imageFile
         post.caption = captionTextField.text
-
+        post.comments = []
         // Set the user as the current user
         post.user = User.current
 
