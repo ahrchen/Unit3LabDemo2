@@ -10,11 +10,11 @@ Time spent: **3** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User can launch camera to take photo instead of photo library
-- [ ] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
-- [ ] Users can intereact with posts via comments, comments will have user data such as username and name
-- [ ] Posts have a time and location attached to them
-- [ ] Users are not able to see other photos until they post their own (within 24 hours)	
+- [X] User can launch camera to take photo instead of photo library
+- [X] Users without iPhones to demo this feature can manually add unique photos to their simulator's Photos app
+- [X] Users can intereact with posts via comments, comments will have user data such as username and name
+- [X] Posts have a time and location attached to them
+- [X] Users are not able to see other photos until they post their own (within 24 hours)	
  
 The following **optional** features are implemented:
 
