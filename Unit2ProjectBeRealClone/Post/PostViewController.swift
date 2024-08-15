@@ -160,7 +160,60 @@ class PostViewController: UIViewController {
     @IBAction func onTakePhotoTapped(_ sender: Any) {
         // Make sure the user's camera is available
         // NOTE: Camera only available on physical iOS device, not available on simulator.
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            print("❌📷 Camera not available")
+            return
+        }
+        locationButtonTapped()
+        // Instantiate the image picker
+        let imagePicker = UIImagePickerController()
         
+        // Shows the camera (vs the photo library)
+        imagePicker.sourceType = .camera
+
+        imagePicker.showsCameraControls = true
+        
+        imagePicker.cameraOverlayView = createOverlayView()
+        
+        func createOverlayView() -> UIView {
+            let overlayView = UIView(frame: self.view.bounds)
+            overlayView.backgroundColor = UIColor.clear
+
+            // Add a label as an example
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: overlayView.frame.width, height: 50))
+            label.center = overlayView.center
+            label.text = "Custom Overlay"
+            label.textAlignment = .center
+            label.textColor = .white
+
+            // Add the label to the overlay view
+            overlayView.addSubview(label)
+            
+            return overlayView
+        }
+
+        // Combine scale, rotation, and translation transforms
+        let scale: CGFloat = 1.2
+        let rotationAngle: CGFloat = .pi / 6 // 30 degrees
+        let translationX: CGFloat = 30
+        let translationY: CGFloat = -20
+
+        let transform = CGAffineTransform(scaleX: scale, y: scale)
+            .rotated(by: rotationAngle)
+            .translatedBy(x: translationX, y: translationY)
+
+        imagePicker.cameraViewTransform = transform
+        // Allows user to edit image within image picker flow (i.e. crop, etc.)
+        // If you don't want to allow editing, you can leave out this line as the default value of `allowsEditing` is false
+        imagePicker.allowsEditing = true
+        
+        // The image picker (camera in this case) will return captured photos via it's delegate method to it's assigned delegate.
+        // Delegate assignee must conform and implement both `UIImagePickerControllerDelegate` and `UINavigationControllerDelegate`
+        imagePicker.delegate = self
+        
+        // Present the image picker (camera)
+        present(imagePicker, animated: true)
+
     }
     
     
