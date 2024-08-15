@@ -31,11 +31,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         NotificationCenter.default.addObserver(forName: Notification.Name("logout"), object: nil, queue: OperationQueue.main) { [weak self] _ in
             self?.logOut()
         }
-        
-        // Check if a current user exists
-        if User.current != nil {
-            login()
-        }
     }
 
     private func login() {

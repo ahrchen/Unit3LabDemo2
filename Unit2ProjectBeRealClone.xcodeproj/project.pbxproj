@@ -133,8 +133,8 @@
 			children = (
 				EE1D5C412C3E089B00A6789E /* FeedViewController.swift */,
 				EE1D5C692C4864FB00A6789E /* DetailedFeedViewController.swift */,
-				EE1D5C6B2C48651500A6789E /* CommentCell.swift */,
 				EE1D5C532C435E5C00A6789E /* PostCell.swift */,
+				EE1D5C6B2C48651500A6789E /* CommentCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
